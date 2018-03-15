@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" charset="utf-8">
+</script>
+<script type="text/javascript">
+            //加载配置
+						window.history.pushState({},0,'http://hzhk.bama555.com');
+            wx.config({
+                debug: true,
+                appId: 'wx6f3460986a269a1b',
+                timestamp: 1521104617,
+                nonceStr: 'sxq6NugjVfl9BaOH',
+                signature: 'd6afce9c390a8570242fc704c5626a4d0b225f57',
+                jsApiList: [
+                    'checkJsApi',
+                    'onMenuShareTimeline',
+                    'onMenuShareAppMessage',
+                    'onMenuShareQZone',
+                    'onMenuShareQQ'
+                ]
+            });
+            //触发
+						alert(2223)
+          wx.ready(function(res){
+						alert(111)
+            wx.onMenuShareTimeline({
+                title: '相约98.  “码”上中奖 ',
+                 desc: '我们诚挚邀请您莅临第十九届投洽会三维码科技体验馆，体验不一样的三维码时代产品，更有多重好礼等您来！',
+                link: 'http://www.baidu.com',
+                imgUrl: 'http://www.cn3wm.com/Uploads/20160711/2689830357835ecc32e40.jpg',
+                success: function () {
+
+                },
+                cancel: function () {
+
+                }
+            });
+
+			})
+        </script>
+</html>
